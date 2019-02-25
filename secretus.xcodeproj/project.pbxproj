@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F197B52AD8C32FCE9EA3E6C /* Pods_secretus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38C141293166BDD24FD4D37 /* Pods_secretus.framework */; };
+		46F7C20733F6215125BA599C /* Pods_secretusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E119974CCEC849F82F6F23C9 /* Pods_secretusUITests.framework */; };
+		BC4088EB62240D4723075C1E /* Pods_secretusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D957CB0088ACAC1B4C7854D /* Pods_secretusTests.framework */; };
+		F4014DBD2223D06D00AC5321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DBC2223D06D00AC5321 /* AppDelegate.swift */; };
+		F4014DBF2223D06D00AC5321 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DBE2223D06D00AC5321 /* NotesViewController.swift */; };
+		F4014DC22223D06D00AC5321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4014DC02223D06D00AC5321 /* Main.storyboard */; };
+		F4014DC42223D07000AC5321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4014DC32223D07000AC5321 /* Assets.xcassets */; };
+		F4014DC72223D07000AC5321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4014DC52223D07000AC5321 /* LaunchScreen.storyboard */; };
+		F4014DD22223D07000AC5321 /* secretusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DD12223D07000AC5321 /* secretusTests.swift */; };
+		F4014DDD2223D07000AC5321 /* secretusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DDC2223D07000AC5321 /* secretusUITests.swift */; };
+		F4014DED2223D10700AC5321 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DEC2223D10700AC5321 /* NotesView.swift */; };
+		F4014DEF2223D19100AC5321 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DEE2223D19100AC5321 /* SplashView.swift */; };
+		F4014DF12223E01900AC5321 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DF02223E01900AC5321 /* SplashViewController.swift */; };
+		F4014DF32223E75C00AC5321 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DF22223E75C00AC5321 /* NewNoteView.swift */; };
+		F4014DF52223E84F00AC5321 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DF42223E84F00AC5321 /* MainTabBarController.swift */; };
+		F4014DF72223EC6400AC5321 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */; };
+		F4014DF92223EF7D00AC5321 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4014DF82223EF7D00AC5321 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4014DCE2223D07000AC5321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4014DB12223D06C00AC5321 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4014DB82223D06C00AC5321;
+			remoteInfo = secretus;
+		};
+		F4014DD92223D07000AC5321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4014DB12223D06C00AC5321 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4014DB82223D06C00AC5321;
+			remoteInfo = secretus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21BB58E22FBD0D16E12E2219 /* Pods-secretusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-secretusTests/Pods-secretusTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D957CB0088ACAC1B4C7854D /* Pods_secretusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secretusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58368CCB7A0A538AD308FE21 /* Pods-secretusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-secretusUITests/Pods-secretusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		58AF7DE6E7C73FBE4E17C0E6 /* Pods-secretus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-secretus/Pods-secretus.debug.xcconfig"; sourceTree = "<group>"; };
+		7CE384F92E99669B6BD0D938 /* Pods-secretusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-secretusUITests/Pods-secretusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E167230EFB6C0F9B75BAD8C /* Pods-secretusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-secretusTests/Pods-secretusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A38C141293166BDD24FD4D37 /* Pods_secretus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secretus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0768E7B5F8FE19AEC0A0F41 /* Pods-secretus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretus.release.xcconfig"; path = "Pods/Target Support Files/Pods-secretus/Pods-secretus.release.xcconfig"; sourceTree = "<group>"; };
+		E119974CCEC849F82F6F23C9 /* Pods_secretusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_secretusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4014DB92223D06C00AC5321 /* secretus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secretus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4014DBC2223D06D00AC5321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4014DBE2223D06D00AC5321 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		F4014DC12223D06D00AC5321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4014DC32223D07000AC5321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4014DC62223D07000AC5321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4014DC82223D07000AC5321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4014DCD2223D07000AC5321 /* secretusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secretusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4014DD12223D07000AC5321 /* secretusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretusTests.swift; sourceTree = "<group>"; };
+		F4014DD32223D07000AC5321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4014DD82223D07000AC5321 /* secretusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secretusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4014DDC2223D07000AC5321 /* secretusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretusUITests.swift; sourceTree = "<group>"; };
+		F4014DDE2223D07000AC5321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4014DEC2223D10700AC5321 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		F4014DEE2223D19100AC5321 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F4014DF02223E01900AC5321 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F4014DF22223E75C00AC5321 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
+		F4014DF42223E84F00AC5321 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		F4014DF82223EF7D00AC5321 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4014DB62223D06C00AC5321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F197B52AD8C32FCE9EA3E6C /* Pods_secretus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4014DCA2223D07000AC5321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4088EB62240D4723075C1E /* Pods_secretusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4014DD52223D07000AC5321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F7C20733F6215125BA599C /* Pods_secretusUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81354F10974587ED5FB7528D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A38C141293166BDD24FD4D37 /* Pods_secretus.framework */,
+				4D957CB0088ACAC1B4C7854D /* Pods_secretusTests.framework */,
+				E119974CCEC849F82F6F23C9 /* Pods_secretusUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2904C2C308F7F435CF49487 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58AF7DE6E7C73FBE4E17C0E6 /* Pods-secretus.debug.xcconfig */,
+				C0768E7B5F8FE19AEC0A0F41 /* Pods-secretus.release.xcconfig */,
+				7E167230EFB6C0F9B75BAD8C /* Pods-secretusTests.debug.xcconfig */,
+				21BB58E22FBD0D16E12E2219 /* Pods-secretusTests.release.xcconfig */,
+				58368CCB7A0A538AD308FE21 /* Pods-secretusUITests.debug.xcconfig */,
+				7CE384F92E99669B6BD0D938 /* Pods-secretusUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4014DB02223D06C00AC5321 = {
+			isa = PBXGroup;
+			children = (
+				F4014DBB2223D06C00AC5321 /* secretus */,
+				F4014DD02223D07000AC5321 /* secretusTests */,
+				F4014DDB2223D07000AC5321 /* secretusUITests */,
+				F4014DBA2223D06C00AC5321 /* Products */,
+				E2904C2C308F7F435CF49487 /* Pods */,
+				81354F10974587ED5FB7528D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4014DBA2223D06C00AC5321 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4014DB92223D06C00AC5321 /* secretus.app */,
+				F4014DCD2223D07000AC5321 /* secretusTests.xctest */,
+				F4014DD82223D07000AC5321 /* secretusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4014DBB2223D06C00AC5321 /* secretus */ = {
+			isa = PBXGroup;
+			children = (
+				F4014DEB2223D09600AC5321 /* Views */,
+				F4014DEA2223D08F00AC5321 /* Controllers */,
+				F4014DBC2223D06D00AC5321 /* AppDelegate.swift */,
+				F4014DC02223D06D00AC5321 /* Main.storyboard */,
+				F4014DC32223D07000AC5321 /* Assets.xcassets */,
+				F4014DC52223D07000AC5321 /* LaunchScreen.storyboard */,
+				F4014DC82223D07000AC5321 /* Info.plist */,
+				F4014DF82223EF7D00AC5321 /* GoogleService-Info.plist */,
+			);
+			path = secretus;
+			sourceTree = "<group>";
+		};
+		F4014DD02223D07000AC5321 /* secretusTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4014DD12223D07000AC5321 /* secretusTests.swift */,
+				F4014DD32223D07000AC5321 /* Info.plist */,
+			);
+			path = secretusTests;
+			sourceTree = "<group>";
+		};
+		F4014DDB2223D07000AC5321 /* secretusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4014DDC2223D07000AC5321 /* secretusUITests.swift */,
+				F4014DDE2223D07000AC5321 /* Info.plist */,
+			);
+			path = secretusUITests;
+			sourceTree = "<group>";
+		};
+		F4014DEA2223D08F00AC5321 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4014DBE2223D06D00AC5321 /* NotesViewController.swift */,
+				F4014DF02223E01900AC5321 /* SplashViewController.swift */,
+				F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */,
+				F4014DF42223E84F00AC5321 /* MainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F4014DEB2223D09600AC5321 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4014DEC2223D10700AC5321 /* NotesView.swift */,
+				F4014DEE2223D19100AC5321 /* SplashView.swift */,
+				F4014DF22223E75C00AC5321 /* NewNoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4014DB82223D06C00AC5321 /* secretus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4014DE12223D07000AC5321 /* Build configuration list for PBXNativeTarget "secretus" */;
+			buildPhases = (
+				EBF64B80CD91997D22B33201 /* [CP] Check Pods Manifest.lock */,
+				F4014DB52223D06C00AC5321 /* Sources */,
+				F4014DB62223D06C00AC5321 /* Frameworks */,
+				F4014DB72223D06C00AC5321 /* Resources */,
+				9E7DE68DFBDDCA2C98FF0CF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secretus;
+			productName = secretus;
+			productReference = F4014DB92223D06C00AC5321 /* secretus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4014DCC2223D07000AC5321 /* secretusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4014DE42223D07000AC5321 /* Build configuration list for PBXNativeTarget "secretusTests" */;
+			buildPhases = (
+				5FE05F9D49982479ADE8F2C5 /* [CP] Check Pods Manifest.lock */,
+				F4014DC92223D07000AC5321 /* Sources */,
+				F4014DCA2223D07000AC5321 /* Frameworks */,
+				F4014DCB2223D07000AC5321 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4014DCF2223D07000AC5321 /* PBXTargetDependency */,
+			);
+			name = secretusTests;
+			productName = secretusTests;
+			productReference = F4014DCD2223D07000AC5321 /* secretusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4014DD72223D07000AC5321 /* secretusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4014DE72223D07000AC5321 /* Build configuration list for PBXNativeTarget "secretusUITests" */;
+			buildPhases = (
+				B0E04CD9AE7F1843CA859641 /* [CP] Check Pods Manifest.lock */,
+				F4014DD42223D07000AC5321 /* Sources */,
+				F4014DD52223D07000AC5321 /* Frameworks */,
+				F4014DD62223D07000AC5321 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4014DDA2223D07000AC5321 /* PBXTargetDependency */,
+			);
+			name = secretusUITests;
+			productName = secretusUITests;
+			productReference = F4014DD82223D07000AC5321 /* secretusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4014DB12223D06C00AC5321 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Home;
+				TargetAttributes = {
+					F4014DB82223D06C00AC5321 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F4014DCC2223D07000AC5321 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4014DB82223D06C00AC5321;
+					};
+					F4014DD72223D07000AC5321 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4014DB82223D06C00AC5321;
+					};
+				};
+			};
+			buildConfigurationList = F4014DB42223D06C00AC5321 /* Build configuration list for PBXProject "secretus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4014DB02223D06C00AC5321;
+			productRefGroup = F4014DBA2223D06C00AC5321 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4014DB82223D06C00AC5321 /* secretus */,
+				F4014DCC2223D07000AC5321 /* secretusTests */,
+				F4014DD72223D07000AC5321 /* secretusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4014DB72223D06C00AC5321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4014DC72223D07000AC5321 /* LaunchScreen.storyboard in Resources */,
+				F4014DF92223EF7D00AC5321 /* GoogleService-Info.plist in Resources */,
+				F4014DC42223D07000AC5321 /* Assets.xcassets in Resources */,
+				F4014DC22223D06D00AC5321 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4014DCB2223D07000AC5321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4014DD62223D07000AC5321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FE05F9D49982479ADE8F2C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-secretusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E7DE68DFBDDCA2C98FF0CF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-secretus/Pods-secretus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-secretus/Pods-secretus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E04CD9AE7F1843CA859641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-secretusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF64B80CD91997D22B33201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-secretus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4014DB52223D06C00AC5321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4014DBF2223D06D00AC5321 /* NotesViewController.swift in Sources */,
+				F4014DF32223E75C00AC5321 /* NewNoteView.swift in Sources */,
+				F4014DBD2223D06D00AC5321 /* AppDelegate.swift in Sources */,
+				F4014DF52223E84F00AC5321 /* MainTabBarController.swift in Sources */,
+				F4014DEF2223D19100AC5321 /* SplashView.swift in Sources */,
+				F4014DF72223EC6400AC5321 /* NewNoteViewController.swift in Sources */,
+				F4014DED2223D10700AC5321 /* NotesView.swift in Sources */,
+				F4014DF12223E01900AC5321 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4014DC92223D07000AC5321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4014DD22223D07000AC5321 /* secretusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4014DD42223D07000AC5321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4014DDD2223D07000AC5321 /* secretusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4014DCF2223D07000AC5321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4014DB82223D06C00AC5321 /* secretus */;
+			targetProxy = F4014DCE2223D07000AC5321 /* PBXContainerItemProxy */;
+		};
+		F4014DDA2223D07000AC5321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4014DB82223D06C00AC5321 /* secretus */;
+			targetProxy = F4014DD92223D07000AC5321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4014DC02223D06D00AC5321 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4014DC12223D06D00AC5321 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4014DC52223D07000AC5321 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4014DC62223D07000AC5321 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4014DDF2223D07000AC5321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4014DE02223D07000AC5321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4014DE22223D07000AC5321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58AF7DE6E7C73FBE4E17C0E6 /* Pods-secretus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXSYQXQB5J;
+				INFOPLIST_FILE = secretus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretus.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4014DE32223D07000AC5321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0768E7B5F8FE19AEC0A0F41 /* Pods-secretus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXSYQXQB5J;
+				INFOPLIST_FILE = secretus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretus.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4014DE52223D07000AC5321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E167230EFB6C0F9B75BAD8C /* Pods-secretusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZHFF5AUZV;
+				INFOPLIST_FILE = secretusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretus.secretusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/secretus.app/secretus";
+			};
+			name = Debug;
+		};
+		F4014DE62223D07000AC5321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BB58E22FBD0D16E12E2219 /* Pods-secretusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZHFF5AUZV;
+				INFOPLIST_FILE = secretusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretus.secretusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/secretus.app/secretus";
+			};
+			name = Release;
+		};
+		F4014DE82223D07000AC5321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58368CCB7A0A538AD308FE21 /* Pods-secretusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZHFF5AUZV;
+				INFOPLIST_FILE = secretusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretus.secretusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = secretus;
+			};
+			name = Debug;
+		};
+		F4014DE92223D07000AC5321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE384F92E99669B6BD0D938 /* Pods-secretusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZHFF5AUZV;
+				INFOPLIST_FILE = secretusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretus.secretusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = secretus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4014DB42223D06C00AC5321 /* Build configuration list for PBXProject "secretus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4014DDF2223D07000AC5321 /* Debug */,
+				F4014DE02223D07000AC5321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4014DE12223D07000AC5321 /* Build configuration list for PBXNativeTarget "secretus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4014DE22223D07000AC5321 /* Debug */,
+				F4014DE32223D07000AC5321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4014DE42223D07000AC5321 /* Build configuration list for PBXNativeTarget "secretusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4014DE52223D07000AC5321 /* Debug */,
+				F4014DE62223D07000AC5321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4014DE72223D07000AC5321 /* Build configuration list for PBXNativeTarget "secretusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4014DE82223D07000AC5321 /* Debug */,
+				F4014DE92223D07000AC5321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4014DB12223D06C00AC5321 /* Project object */;
+}
