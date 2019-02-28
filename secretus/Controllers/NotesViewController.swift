@@ -14,13 +14,16 @@ class NotesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Notes"
         SetDefaults()
         
     }
     
     func SetDefaults(){
-        notesView = NotesView()
+        notesView = NotesView(frame: self.view.bounds)
         self.view.addSubview(notesView)
+        notesView.anchorIn(view: self.view)
     }
 
 

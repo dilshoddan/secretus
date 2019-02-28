@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SplashViewController: UIViewController {
 
@@ -22,13 +23,22 @@ class SplashViewController: UIViewController {
     func SetDefaults() {
         splash = SplashView(frame: self.view.bounds)
         self.view.addSubview(splash)
+        splash.anchorIn(view: self.view)
     }
     
     func BeginTheShow(){
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            appDelegate.window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+            if Auth.auth().currentUser == nil {
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let loginVC = LoginViewController()
+                appDelegate.window?.rootViewController  = UINavigationController(rootViewController: loginVC)
+            }
+            else {
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+            }
+//            appDelegate.window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
         })
         
     }

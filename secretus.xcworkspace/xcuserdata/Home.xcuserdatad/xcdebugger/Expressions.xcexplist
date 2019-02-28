@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in AuthService.registerUser(withEmail:andPassword:userCreationComplete:):AuthService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "FIRAuthErrorCode(rawValue: error!._code)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginWithEmailViewController.RegisterUser(withEmail:andPassword:):LoginWithEmailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "registerError!.localizedDescription">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AuthService.loginUser(withEmail:andPassword:loginComplete:):AuthService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "FIRAuthErrorCode(rawValue: error!._code)">
+            </PersistentString>
+            <PersistentString
+               value = "FIRAuthErrorNameKey">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

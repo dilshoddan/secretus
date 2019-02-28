@@ -1,5 +1,5 @@
 //
-//  NewNoteView.swift
+//  ProfileView.swift
 //  secretus
 //
 //  Created by Home on 2/25/19.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class NewNoteView: UIView {
-    
+class ProfileView: UIView {
+
     public var shouldSetupConstraints = true
     public var activityIndicator: UIActivityIndicatorView!
-    public var secretusLbl: UILabel!
     
     let screenSize = UIScreen.main.bounds
     
@@ -23,7 +22,8 @@ class NewNoteView: UIView {
         SetControlDefaults()
         updateConstraints()
         
-        self.backgroundColor = UIColor.green
+        self.backgroundColor = UIColor.red
+        
     }
     
     required init?(coder aDecoder: NSCoder){
@@ -34,7 +34,7 @@ class NewNoteView: UIView {
     
     override func updateConstraints(){
         if(shouldSetupConstraints){
-            secretusLbl.centerIn(view: self)
+            
             
             //Render Notes view
             
@@ -44,14 +44,8 @@ class NewNoteView: UIView {
     }
     
     func SetControlDefaults(){
-        secretusLbl = UILabel()
-        secretusLbl.text = "New Note"
-        secretusLbl.font = UIFont(name: "Times New Roman", size: 30)
-        secretusLbl.textColor = UIColor.white
-        secretusLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(secretusLbl)
-        
         
     }
-}
+    
 
+}

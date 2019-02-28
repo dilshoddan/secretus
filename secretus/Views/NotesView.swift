@@ -12,6 +12,7 @@ class NotesView: UIView {
     
     public var shouldSetupConstraints = true
     public var activityIndicator: UIActivityIndicatorView!
+    public var secretusLbl: UILabel!
     
     let screenSize = UIScreen.main.bounds
     
@@ -34,7 +35,7 @@ class NotesView: UIView {
     
     override func updateConstraints(){
         if(shouldSetupConstraints){
-            
+            secretusLbl.centerIn(view: self)
             
             //Render Notes view
             
@@ -44,6 +45,13 @@ class NotesView: UIView {
     }
     
     func SetControlDefaults(){
+        
+        secretusLbl = UILabel()
+        secretusLbl.text = "Notes"
+        secretusLbl.font = UIFont(name: "Times New Roman", size: 30)
+        secretusLbl.textColor = UIColor.white
+        secretusLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(secretusLbl)
         
     }
     

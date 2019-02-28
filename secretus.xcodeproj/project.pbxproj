@@ -24,6 +24,16 @@
 		F4014DF52223E84F00AC5321 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DF42223E84F00AC5321 /* MainTabBarController.swift */; };
 		F4014DF72223EC6400AC5321 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */; };
 		F4014DF92223EF7D00AC5321 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4014DF82223EF7D00AC5321 /* GoogleService-Info.plist */; };
+		F40622532227A09100C27ACF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40622522227A09100C27ACF /* ShadowView.swift */; };
+		F40622552227AE4C00C27ACF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40622542227AE4C00C27ACF /* AuthService.swift */; };
+		F40622572227B42000C27ACF /* LoginWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40622562227B42000C27ACF /* LoginWithEmailView.swift */; };
+		F40622592227B44200C27ACF /* LoginWithEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40622582227B44200C27ACF /* LoginWithEmailViewController.swift */; };
+		F43BE19C22251ADF003D4AA8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BE19B22251ADF003D4AA8 /* ViewExtension.swift */; };
+		F43BE19E2225206D003D4AA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BE19D2225206D003D4AA8 /* LoginView.swift */; };
+		F43BE1A022252098003D4AA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BE19F22252098003D4AA8 /* LoginViewController.swift */; };
+		F44EBFD02223F5A000660B1E /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFCF2223F5A000660B1E /* DatabaseService.swift */; };
+		F44EBFD32223F62A00660B1E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFD22223F62A00660B1E /* ProfileView.swift */; };
+		F44EBFD52223F64500660B1E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFD42223F64500660B1E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +83,16 @@
 		F4014DF42223E84F00AC5321 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 		F4014DF82223EF7D00AC5321 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F40622522227A09100C27ACF /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		F40622542227AE4C00C27ACF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F40622562227B42000C27ACF /* LoginWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailView.swift; sourceTree = "<group>"; };
+		F40622582227B44200C27ACF /* LoginWithEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailViewController.swift; sourceTree = "<group>"; };
+		F43BE19B22251ADF003D4AA8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		F43BE19D2225206D003D4AA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F43BE19F22252098003D4AA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F44EBFCF2223F5A000660B1E /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		F44EBFD22223F62A00660B1E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F44EBFD42223F64500660B1E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +171,7 @@
 		F4014DBB2223D06C00AC5321 /* secretus */ = {
 			isa = PBXGroup;
 			children = (
+				F44EBFD12223F5A500660B1E /* Services */,
 				F4014DEB2223D09600AC5321 /* Views */,
 				F4014DEA2223D08F00AC5321 /* Controllers */,
 				F4014DBC2223D06D00AC5321 /* AppDelegate.swift */,
@@ -188,6 +209,9 @@
 				F4014DF02223E01900AC5321 /* SplashViewController.swift */,
 				F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */,
 				F4014DF42223E84F00AC5321 /* MainTabBarController.swift */,
+				F44EBFD42223F64500660B1E /* ProfileViewController.swift */,
+				F43BE19F22252098003D4AA8 /* LoginViewController.swift */,
+				F40622582227B44200C27ACF /* LoginWithEmailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,11 +219,25 @@
 		F4014DEB2223D09600AC5321 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F43BE19B22251ADF003D4AA8 /* ViewExtension.swift */,
+				F40622522227A09100C27ACF /* ShadowView.swift */,
 				F4014DEC2223D10700AC5321 /* NotesView.swift */,
 				F4014DEE2223D19100AC5321 /* SplashView.swift */,
 				F4014DF22223E75C00AC5321 /* NewNoteView.swift */,
+				F44EBFD22223F62A00660B1E /* ProfileView.swift */,
+				F43BE19D2225206D003D4AA8 /* LoginView.swift */,
+				F40622562227B42000C27ACF /* LoginWithEmailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F44EBFD12223F5A500660B1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F44EBFCF2223F5A000660B1E /* DatabaseService.swift */,
+				F40622542227AE4C00C27ACF /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,14 +457,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43BE1A022252098003D4AA8 /* LoginViewController.swift in Sources */,
+				F44EBFD02223F5A000660B1E /* DatabaseService.swift in Sources */,
 				F4014DBF2223D06D00AC5321 /* NotesViewController.swift in Sources */,
+				F44EBFD32223F62A00660B1E /* ProfileView.swift in Sources */,
 				F4014DF32223E75C00AC5321 /* NewNoteView.swift in Sources */,
 				F4014DBD2223D06D00AC5321 /* AppDelegate.swift in Sources */,
 				F4014DF52223E84F00AC5321 /* MainTabBarController.swift in Sources */,
+				F43BE19C22251ADF003D4AA8 /* ViewExtension.swift in Sources */,
+				F44EBFD52223F64500660B1E /* ProfileViewController.swift in Sources */,
+				F40622592227B44200C27ACF /* LoginWithEmailViewController.swift in Sources */,
+				F40622532227A09100C27ACF /* ShadowView.swift in Sources */,
 				F4014DEF2223D19100AC5321 /* SplashView.swift in Sources */,
 				F4014DF72223EC6400AC5321 /* NewNoteViewController.swift in Sources */,
+				F43BE19E2225206D003D4AA8 /* LoginView.swift in Sources */,
 				F4014DED2223D10700AC5321 /* NotesView.swift in Sources */,
+				F40622572227B42000C27ACF /* LoginWithEmailView.swift in Sources */,
 				F4014DF12223E01900AC5321 /* SplashViewController.swift in Sources */,
+				F40622552227AE4C00C27ACF /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

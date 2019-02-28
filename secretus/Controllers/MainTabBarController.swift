@@ -29,7 +29,7 @@ class MainTabBarController: UITabBarController {
         //viewControllers = [loginVC, skipsVC, searchVC, notificationsVC, messagesVC]
         
         viewControllers = [notesView, newNoteView]
-        self.tabBar.tintColor = UIColor.lightGray
+        self.tabBar.tintColor = UIColor.darkGray
     }
 
 }

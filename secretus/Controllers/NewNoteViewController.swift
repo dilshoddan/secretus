@@ -10,17 +10,20 @@ import UIKit
 
 class NewNoteViewController: UIViewController {
     
-    weak var notesView: NotesView!
+    var newNoteView: NewNoteView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "New note"
         SetDefaults()
         
     }
     
     func SetDefaults(){
-        notesView = NotesView()
-        self.view.addSubview(notesView)
+        newNoteView = NewNoteView(frame: self.view.bounds)
+        self.view.addSubview(newNoteView)
+        newNoteView.anchorIn(view: self.view)
     }
     
     
