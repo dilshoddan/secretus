@@ -71,7 +71,7 @@ class LoginWithEmailViewController: UIViewController {
 
     func ShowMainPage(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+        appDelegate.window?.rootViewController = MainNavigationController(rootViewController: MainTabBarController())
     }
     
     func TryAgain(){

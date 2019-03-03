@@ -34,6 +34,7 @@
 		F44EBFD02223F5A000660B1E /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFCF2223F5A000660B1E /* DatabaseService.swift */; };
 		F44EBFD32223F62A00660B1E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFD22223F62A00660B1E /* ProfileView.swift */; };
 		F44EBFD52223F64500660B1E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFD42223F64500660B1E /* ProfileViewController.swift */; };
+		F472CE19222C4A1D00027DD8 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472CE18222C4A1D00027DD8 /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		F44EBFCF2223F5A000660B1E /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		F44EBFD22223F62A00660B1E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F44EBFD42223F64500660B1E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F472CE18222C4A1D00027DD8 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,13 +207,14 @@
 		F4014DEA2223D08F00AC5321 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4014DBE2223D06D00AC5321 /* NotesViewController.swift */,
-				F4014DF02223E01900AC5321 /* SplashViewController.swift */,
-				F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */,
+				F472CE18222C4A1D00027DD8 /* MainNavigationController.swift */,
 				F4014DF42223E84F00AC5321 /* MainTabBarController.swift */,
+				F4014DF02223E01900AC5321 /* SplashViewController.swift */,
 				F44EBFD42223F64500660B1E /* ProfileViewController.swift */,
 				F43BE19F22252098003D4AA8 /* LoginViewController.swift */,
 				F40622582227B44200C27ACF /* LoginWithEmailViewController.swift */,
+				F4014DBE2223D06D00AC5321 /* NotesViewController.swift */,
+				F4014DF62223EC6400AC5321 /* NewNoteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				F4014DF52223E84F00AC5321 /* MainTabBarController.swift in Sources */,
 				F43BE19C22251ADF003D4AA8 /* ViewExtension.swift in Sources */,
 				F44EBFD52223F64500660B1E /* ProfileViewController.swift in Sources */,
+				F472CE19222C4A1D00027DD8 /* MainNavigationController.swift in Sources */,
 				F40622592227B44200C27ACF /* LoginWithEmailViewController.swift in Sources */,
 				F40622532227A09100C27ACF /* ShadowView.swift in Sources */,
 				F4014DEF2223D19100AC5321 /* SplashView.swift in Sources */,

@@ -72,7 +72,7 @@ class LoginWithEmailView: UIView {
         
         email = UITextField()
         email.placeholder = "email"
-        email.layer.cornerRadius = 10
+        email.layer.cornerRadius = 5
         email.clipsToBounds = true
         email.translatesAutoresizingMaskIntoConstraints = false
         email.layer.masksToBounds = true
@@ -82,7 +82,7 @@ class LoginWithEmailView: UIView {
         password = UITextField()
         password.isSecureTextEntry = true
         password.placeholder = "password"
-        password.layer.cornerRadius = 10
+        password.layer.cornerRadius = 5
         password.clipsToBounds = true
         password.translatesAutoresizingMaskIntoConstraints = false
         password.layer.masksToBounds = true
@@ -92,7 +92,7 @@ class LoginWithEmailView: UIView {
         login = UIButton()
         login.setTitle("login", for: .normal)
         login.backgroundColor = UIColor.green
-        login.layer.cornerRadius = 10
+        login.layer.cornerRadius = 5
         login.clipsToBounds = true
         login.translatesAutoresizingMaskIntoConstraints = false
         

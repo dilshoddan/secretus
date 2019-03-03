@@ -12,7 +12,11 @@ class NewNoteView: UIView {
     
     public var shouldSetupConstraints = true
     public var activityIndicator: UIActivityIndicatorView!
+    public var regularConstraints: [NSLayoutConstraint] = []
     public var secretusLbl: UILabel!
+    public var note: UITextView!
+    public var noteTranslate: UITextView!
+    public var record: UIButton!
     
     let screenSize = UIScreen.main.bounds
     
@@ -23,7 +27,7 @@ class NewNoteView: UIView {
         SetControlDefaults()
         updateConstraints()
         
-        self.backgroundColor = UIColor.green
+        
     }
     
     required init?(coder aDecoder: NSCoder){
@@ -34,7 +38,24 @@ class NewNoteView: UIView {
     
     override func updateConstraints(){
         if(shouldSetupConstraints){
-            secretusLbl.centerIn(view: self)
+            regularConstraints = [
+                note.topAnchor.constraint(equalToSystemSpacingBelow: self.safeTopAnchor, multiplier: 6),
+                note.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0),
+//                note.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+                note.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 3/9),
+                
+                noteTranslate.topAnchor.constraint(equalToSystemSpacingBelow: note.bottomAnchor, multiplier: 1),
+                noteTranslate.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0),
+//                noteTranslate.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+                noteTranslate.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 3/9),
+                
+                record.topAnchor.constraint(equalToSystemSpacingBelow: noteTranslate.bottomAnchor, multiplier: 1),
+                record.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0),
+                record.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+                record.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/9)
+            ]
+                
+            NSLayoutConstraint.activate(regularConstraints)
             
             //Render Notes view
             
@@ -49,7 +70,33 @@ class NewNoteView: UIView {
         secretusLbl.font = UIFont(name: "Times New Roman", size: 30)
         secretusLbl.textColor = UIColor.white
         secretusLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(secretusLbl)
+        
+        note = UITextView()
+        note.text = "recording here"
+        note.layer.masksToBounds = true
+        note.layer.borderColor = UIColor.black.cgColor
+        note.layer.borderWidth = 0.2
+        note.translatesAutoresizingMaskIntoConstraints = false
+        
+        noteTranslate = UITextView()
+        noteTranslate.text = "translation here"
+        noteTranslate.layer.masksToBounds = true
+        noteTranslate.layer.borderColor = UIColor.black.cgColor
+        noteTranslate.layer.borderWidth = 0.2
+        noteTranslate.translatesAutoresizingMaskIntoConstraints = false
+        
+        record = UIButton()
+        record.setTitle("Start Recording", for: .normal)
+        record.backgroundColor = UIColor.green
+        record.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        
+        self.addSubview(note)
+        self.addSubview(noteTranslate)
+        self.addSubview(record)
+        self.backgroundColor = UIColor.lightGray
+        
         
         
     }

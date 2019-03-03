@@ -32,11 +32,11 @@ class SplashViewController: UIViewController {
             if Auth.auth().currentUser == nil {
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 let loginVC = LoginViewController()
-                appDelegate.window?.rootViewController  = UINavigationController(rootViewController: loginVC)
+                appDelegate.window?.rootViewController  = MainNavigationController(rootViewController: loginVC)
             }
             else {
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                appDelegate.window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+                appDelegate.window?.rootViewController = MainNavigationController(rootViewController: MainTabBarController())
             }
 //            appDelegate.window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
         })

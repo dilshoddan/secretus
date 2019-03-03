@@ -39,12 +39,12 @@ class LoginViewController: UIViewController {
     @objc
     func LoginByEmail(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController = UINavigationController(rootViewController: LoginWithEmailViewController())
+        appDelegate.window?.rootViewController = MainNavigationController(rootViewController: LoginWithEmailViewController())
     }
     
     @objc
     func loginWithFB(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+        appDelegate.window?.rootViewController = MainNavigationController(rootViewController: MainTabBarController())
     }
 }
