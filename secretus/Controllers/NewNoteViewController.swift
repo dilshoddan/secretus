@@ -8,6 +8,7 @@
 
 import UIKit
 import Speech
+import Firebase
 
 class NewNoteViewController: UIViewController, SFSpeechRecognizerDelegate {
     
@@ -72,17 +73,55 @@ class NewNoteViewController: UIViewController, SFSpeechRecognizerDelegate {
         newNoteView = NewNoteView(frame: self.view.bounds)
         self.view.addSubview(newNoteView)
         newNoteView.anchorIn(view: self.view)
+        
+        newNoteView.record.bindToKeyBoard()
     }
     
     func AddEvents(){
         newNoteView.record.addTarget(self, action: #selector(RecordButtonClicked), for: .touchUpInside)
-       
+        newNoteView.save.addTarget(self, action: #selector(SaveNote), for: .touchUpInside)
+        newNoteView.logOut.addTarget(self, action: #selector(LogOut), for: .touchUpInside)
         
     }
-   
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    @objc
+    func LogOut(){
+        let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
+        let popUpAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
+            do {
+                try Auth.auth().signOut()
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let loginVC = LoginViewController()
+                appDelegate.window?.rootViewController  = MainNavigationController(rootViewController: loginVC)
+            } catch{
+                print(error)
+            }
+        }
+        
+        logoutPopup.addAction(popUpAction)
+        present(logoutPopup, animated: true, completion: nil)
+        
+    }
+    
+    @objc
+    func SaveNote(){
+        guard  let uid = Auth.auth().currentUser?.uid else { return }
+        newNoteView.activityIndicator.isHidden = false
+        newNoteView.activityIndicator.startAnimating()
+        if let note = newNoteView.note.text, !note.isEmpty {
+            DatabaseService.instance.uploadNote(withNote: note, forUID: uid) { (isComplete) in
+                if isComplete {
+                    self.newNoteView.activityIndicator.stopAnimating()
+                    self.newNoteView.activityIndicator.isHidden = true
+                    self.newNoteView.activityIndicator.removeFromSuperview()
+                }
+            }
+        }
     }
     
     @objc
@@ -141,10 +180,10 @@ class NewNoteViewController: UIViewController, SFSpeechRecognizerDelegate {
         })
         
     }
-        
-            
-        
-        
+    
+    
+    
+    
     
 }
 

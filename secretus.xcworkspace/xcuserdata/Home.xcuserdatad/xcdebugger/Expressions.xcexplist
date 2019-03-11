@@ -3,12 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in DatabaseService.getUserID(forUID:handler:):DatabaseService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.key">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NotesViewController.tableView(_:cellForRowAt:):NotesViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in AuthService.registerUser(withEmail:andPassword:userCreationComplete:):AuthService.swift">
          <PersistentStrings>
             <PersistentString
                value = "FIRAuthErrorCode(rawValue: error!._code)">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in NotesViewController.viewDidAppear(_:):NotesViewController.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in LoginWithEmailViewController.RegisterUser(withEmail:andPassword:):LoginWithEmailViewController.swift">
@@ -28,6 +42,9 @@
                value = "FIRAuthErrorNameKey">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in DatabaseService.getNotes(handler:):DatabaseService.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

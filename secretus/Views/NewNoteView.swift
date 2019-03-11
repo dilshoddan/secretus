@@ -17,6 +17,8 @@ class NewNoteView: UIView {
     public var note: UITextView!
     public var noteTranslate: UITextView!
     public var record: UIButton!
+    public var save: UIButton!
+    public var logOut: UIButton!
     
     let screenSize = UIScreen.main.bounds
     
@@ -44,18 +46,31 @@ class NewNoteView: UIView {
 //                note.centerXAnchor.constraint(equalTo: self.centerXAnchor),
                 note.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 3/9),
                 
+                save.bottomAnchor.constraint(equalTo: note.bottomAnchor),
+                save.widthAnchor.constraint(equalTo: note.widthAnchor, multiplier: 1/4),
+                save.rightAnchor.constraint(equalToSystemSpacingAfter: note.rightAnchor, multiplier: 1.0),
+                
                 noteTranslate.topAnchor.constraint(equalToSystemSpacingBelow: note.bottomAnchor, multiplier: 1),
                 noteTranslate.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0),
 //                noteTranslate.centerXAnchor.constraint(equalTo: self.centerXAnchor),
                 noteTranslate.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 3/9),
                 
+                logOut.bottomAnchor.constraint(equalTo: noteTranslate.bottomAnchor),
+                logOut.widthAnchor.constraint(equalTo: noteTranslate.widthAnchor, multiplier: 1/4),
+                logOut.rightAnchor.constraint(equalToSystemSpacingAfter: noteTranslate.rightAnchor, multiplier: 1.0),
+                
+                
+                
                 record.topAnchor.constraint(equalToSystemSpacingBelow: noteTranslate.bottomAnchor, multiplier: 1),
                 record.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.0),
                 record.centerXAnchor.constraint(equalTo: self.centerXAnchor),
                 record.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/9)
+                
             ]
                 
             NSLayoutConstraint.activate(regularConstraints)
+            
+//            activityIndicator.anchorIn(view: self)
             
             //Render Notes view
             
@@ -65,6 +80,10 @@ class NewNoteView: UIView {
     }
     
     func SetControlDefaults(){
+        activityIndicator = UIActivityIndicatorView(style: .gray)
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.isHidden = true
+        
         secretusLbl = UILabel()
         secretusLbl.text = "New Note"
         secretusLbl.font = UIFont(name: "Times New Roman", size: 30)
@@ -75,14 +94,14 @@ class NewNoteView: UIView {
         note.text = "recording here"
         note.layer.masksToBounds = true
         note.layer.borderColor = UIColor.black.cgColor
-        note.layer.borderWidth = 0.2
+        note.layer.borderWidth = 0.7
         note.translatesAutoresizingMaskIntoConstraints = false
         
         noteTranslate = UITextView()
         noteTranslate.text = "translation here"
         noteTranslate.layer.masksToBounds = true
         noteTranslate.layer.borderColor = UIColor.black.cgColor
-        noteTranslate.layer.borderWidth = 0.2
+        noteTranslate.layer.borderWidth = 0.5
         noteTranslate.translatesAutoresizingMaskIntoConstraints = false
         
         record = UIButton()
@@ -90,12 +109,27 @@ class NewNoteView: UIView {
         record.backgroundColor = UIColor.green
         record.translatesAutoresizingMaskIntoConstraints = false
         
+        save = UIButton()
+        save.setTitle("Save", for: .normal)
+        save.backgroundColor = UIColor.green
+        save.layer.opacity = 0.5
+        save.translatesAutoresizingMaskIntoConstraints = false
+        
+        logOut = UIButton()
+        logOut.setTitle("LogOut", for: .normal)
+        logOut.backgroundColor = UIColor.green
+        logOut.layer.opacity = 0.5
+        logOut.translatesAutoresizingMaskIntoConstraints = false
+        
         
         
         self.addSubview(note)
         self.addSubview(noteTranslate)
         self.addSubview(record)
-        self.backgroundColor = UIColor.lightGray
+        self.addSubview(save)
+        self.addSubview(logOut)
+        self.addSubview(activityIndicator)
+        self.backgroundColor = UIColor.white
         
         
         

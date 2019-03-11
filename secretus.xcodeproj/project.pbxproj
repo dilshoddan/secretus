@@ -34,6 +34,7 @@
 		F44EBFD02223F5A000660B1E /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFCF2223F5A000660B1E /* DatabaseService.swift */; };
 		F44EBFD32223F62A00660B1E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFD22223F62A00660B1E /* ProfileView.swift */; };
 		F44EBFD52223F64500660B1E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44EBFD42223F64500660B1E /* ProfileViewController.swift */; };
+		F45B40D822364BB300D476F2 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B40D722364BB300D476F2 /* Notes.swift */; };
 		F472CE19222C4A1D00027DD8 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472CE18222C4A1D00027DD8 /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		F44EBFCF2223F5A000660B1E /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		F44EBFD22223F62A00660B1E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F44EBFD42223F64500660B1E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F45B40D722364BB300D476F2 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		F472CE18222C4A1D00027DD8 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,8 +178,9 @@
 				F44EBFD12223F5A500660B1E /* Services */,
 				F4014DEB2223D09600AC5321 /* Views */,
 				F4014DEA2223D08F00AC5321 /* Controllers */,
-				F4014DBC2223D06D00AC5321 /* AppDelegate.swift */,
+				F45B40D622364B9600D476F2 /* Model */,
 				F4014DC02223D06D00AC5321 /* Main.storyboard */,
+				F4014DBC2223D06D00AC5321 /* AppDelegate.swift */,
 				F4014DC32223D07000AC5321 /* Assets.xcassets */,
 				F4014DC52223D07000AC5321 /* LaunchScreen.storyboard */,
 				F4014DC82223D07000AC5321 /* Info.plist */,
@@ -241,6 +244,14 @@
 				F40622542227AE4C00C27ACF /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F45B40D622364B9600D476F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F45B40D722364BB300D476F2 /* Notes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +482,7 @@
 				F44EBFD52223F64500660B1E /* ProfileViewController.swift in Sources */,
 				F472CE19222C4A1D00027DD8 /* MainNavigationController.swift in Sources */,
 				F40622592227B44200C27ACF /* LoginWithEmailViewController.swift in Sources */,
+				F45B40D822364BB300D476F2 /* Notes.swift in Sources */,
 				F40622532227A09100C27ACF /* ShadowView.swift in Sources */,
 				F4014DEF2223D19100AC5321 /* SplashView.swift in Sources */,
 				F4014DF72223EC6400AC5321 /* NewNoteViewController.swift in Sources */,

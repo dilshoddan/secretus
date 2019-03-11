@@ -39,4 +39,37 @@ class DatabaseService {
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
+    func uploadNote(withNote note:String, forUID uid:String, sendComplete: @escaping(_ status: Bool) -> ()){
+        REF_NOTES.childByAutoId().updateChildValues(["content": note, "senderId": uid])
+        sendComplete(true)
+    }
+    
+    func getNotes(handler: @escaping(_ notes: [Notes]) -> ()){
+        var notes: [Notes] = []
+        REF_NOTES.observeSingleEvent(of: .value) { (notesSnapshot) in
+            guard let notesSnapshot = notesSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for note in notesSnapshot {
+                let content = note.childSnapshot(forPath: "content").value as! String
+                //if sophisticated Model created all other child's attributes can be used
+                let senderId = note.childSnapshot(forPath: "senderId").value as! String
+                let note = Notes(note: content, senderId: senderId)
+                notes.append(note)
+            }
+            
+            handler(notes)
+        }
+    }
+    
+    func getUserID(forUID uid: String, handler: @escaping(_ userName: String) -> ()){
+        REF_USERS.observeSingleEvent(of: .value) { userSnapshot in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                if user.key == uid {
+                    handler(user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
+    }
+    
 }
